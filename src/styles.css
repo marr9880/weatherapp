@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-header {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+  color: cadetblue;
+  background-color: yellow;
+  border: 2px solid cadetblue;
+}
+
+.location-entry-form {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-input {
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 5px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  background-color: azure;
+  width: 25rem;
+}
+
+.location-submit-button {
+  border: 1px solid green;
+  border-radius: 15px;
+  background-color: green;
+  padding: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  width: 10rem;
+}
