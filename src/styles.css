@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 40px;
 }
 
 .page-header {
@@ -47,4 +47,9 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.5rem;
   width: 10rem;
+}
+
+.weather-display-container {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
 }
