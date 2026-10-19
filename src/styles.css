@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  background-color: antiquewhite;
 }
 
 .page-header {
@@ -50,6 +51,88 @@ body {
 }
 
 .weather-display-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.current-weather {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  background-color: rgb(215, 221, 223);
+  color: black;
+  border: 5px solid;
+  border-radius: 12px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.current-weather-header {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.forecast-container {
   display: grid;
-  grid-template: 1fr 1fr / 1fr;
+  grid-template-rows: repeat(3 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "dayone daytwo daythree"
+    "dayfour dayfive daysix";
+  gap: 20px;
+}
+
+.forecast-header {
+  grid-area: header;
+  text-align: center;
+  font-weight: 800;
+  font-size: 2rem;
+  background-color: rgb(215, 221, 223);
+  color: black;
+  text-decoration: underline;
+}
+
+.day-one-forecast {
+  grid-area: dayone;
+}
+
+.day-two-forecast {
+  grid-area: daytwo;
+}
+
+.day-three-forecast {
+  grid-area: daythree;
+}
+
+.day-four-forecast {
+  grid-area: dayfour;
+}
+
+.day-five-forecast {
+  grid-area: dayfive;
+}
+
+.day-six-forecast {
+  grid-area: daysix;
+}
+
+.day-one-forecast,
+.day-two-forecast,
+.day-three-forecast,
+.day-four-forecast,
+.day-five-forecast,
+.day-six-forecast {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  background-color: rgb(215, 221, 223);
+  color: black;
+  border: 5px solid;
+  border-radius: 12px;
+  padding: 12px;
 }
