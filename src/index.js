@@ -1,5 +1,5 @@
 import "./styles.css";
-import * as displayControl from "./displayControl.js";
+import { handlelocationSumbit } from "./action.js";
+const locationSubmitBtn = document.querySelector(".location-submit-button");
 
-displayControl.createPageHeader();
-displayControl.createLocationEntryForm();
+locationSubmitBtn.addEventListener("click", handlelocationSumbit);

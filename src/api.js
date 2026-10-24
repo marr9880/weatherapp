@@ -16,22 +16,3 @@ export async function getWeatherData(location) {
     alert("Failed to load data. Please try again.");
   }
 }
-
-/*export async function getWeatherGif(icon) {
-  try {
-    const response = await fetch(
-      `https://api.giphy.com/v1/gifs/translate?api_key=bLRDVaXWQOb4vNDJdPU9TVSzQ1rlFvd1&s=${icon}&rating=g`,
-    );
-
-    if (!response.ok) {
-      throw new Error(`http error! status: ${response.status}`);
-    }
-
-    const weatherGif = await response.json();
-    console.log(weatherGif);
-    return weatherGif;
-  } catch (error) {
-    console.error("Error: ", error);
-    alert("Failed to load data. Please try again.");
-  }
-}*/
