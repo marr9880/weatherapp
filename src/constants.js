@@ -6,3 +6,5 @@ export const currentWeatherContainer = document.querySelector(
   ".current-weather-container",
 );
 export const forecastContainer = document.querySelector(".forecast-container");
+
+export const LOCAL_STORAGE_LOCATION_KEY = "userLocation";

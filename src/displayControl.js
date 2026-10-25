@@ -104,7 +104,7 @@ export function createWeatherForecastDisplay(
   constants.forecastContainer.replaceChildren();
   const forecastHeader = document.createElement("p");
   forecastHeader.classList.add("forecast-header");
-  forecastHeader.textContent = "6-Day Forecast";
+  forecastHeader.textContent = "5-Day Forecast";
   const forecastDayOne = document.createElement("div");
   forecastDayOne.classList.add("day-one-forecast");
   const dayOneDate = document.createElement("p");
